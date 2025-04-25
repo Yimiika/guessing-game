@@ -11,7 +11,7 @@ module.exports = defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: `http://localhost:${PORT}`,
+        target: `https://guessing-game-o6ly.onrender.com`,
         changeOrigin: true,
       },
     },
