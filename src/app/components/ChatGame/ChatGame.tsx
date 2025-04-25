@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:3001';
+const SOCKET_URL = 'https://guessing-game-o6ly.onrender.com';
 
 interface Player {
   id: string;
