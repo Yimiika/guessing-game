@@ -1,13 +1,12 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
-import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+const { defineConfig } = require('vite');
+const reactRefresh = require('@vitejs/plugin-react-refresh');
 
 const { PORT = 3001 } = process.env;
 
-// https://vitejs.dev/config/
-export default defineConfig({
+module.exports = defineConfig({
   plugins: [reactRefresh()],
   server: {
     proxy: {
